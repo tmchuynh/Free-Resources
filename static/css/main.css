@@ -180,6 +180,10 @@ section {
 
 .section-title {
   padding: 0rem; }
+  .section-title a {
+    color: var(--grey); }
+    .section-title a:hover {
+      color: var(--dark-orange); }
   .section-title h2 {
     /*name of section */
     font-size: 2rem;
@@ -188,8 +192,7 @@ section {
     text-align: center;
     margin: 1rem;
     padding: 2rem;
-    position: relative;
-    color: var(--grey); }
+    position: relative; }
     .section-title h2::before {
       content: "";
       position: absolute;

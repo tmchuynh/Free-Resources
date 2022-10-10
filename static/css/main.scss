@@ -241,6 +241,15 @@ section {
 
   padding: 0rem;
 
+  a {
+    color: var(--grey);
+
+    &:hover {
+      color: var(--dark-orange);
+      
+    }
+  }
+
   h2 {
     /*name of section */
     font-size: 2rem;
@@ -250,7 +259,9 @@ section {
     margin: 1rem;
     padding: 2rem;
     position: relative;
-    color: var(--grey);
+    
+
+    
 
     &::before {
       content: "";

@@ -68,6 +68,11 @@ li {
   font-family: var(--font-family);
 }
 
+img {
+  margin: 1rem auto;
+  position: relative;
+}
+
 /*--------------------------------------------------------------
   # Text Colors
 --------------------------------------------------------------*/
@@ -177,6 +182,7 @@ header {
 
   ul {
     list-style: none;
+
     &:last-child {
       margin-bottom: 2rem;
     }
@@ -196,7 +202,7 @@ header {
         background-color: var(--light-orange);
         color: black;
       }
-      
+
     }
   }
 }
@@ -234,7 +240,7 @@ section {
 }
 
 .section-title {
-  text-align: center;
+
   padding: 0rem;
 
   h2 {
@@ -242,6 +248,7 @@ section {
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
+    text-align: center;
     margin: 1rem;
     padding: 2rem;
     position: relative;
@@ -274,7 +281,7 @@ section {
     text-transform: uppercase;
     margin-bottom: 0.625rem;
     margin-top: 1rem;
-    padding-left: 6rem;
+    padding-left: 5rem;
     position: relative;
     color: var(--grey);
     font-weight: bold;
@@ -285,6 +292,10 @@ section {
   p {
     margin: auto;
     width: 90%;
+  }
+  ul {
+    margin-left: 8rem;
+    text-align: left;
   }
 }
 
@@ -316,18 +327,6 @@ section {
   margin: 2rem;
   border-radius: 1rem;
   font-size: 1.5rem;
-}
-
-//--------------------------------------
-
-.introduction {
-  p {
-    text-align: left;
-  }
-  ul {
-    margin-left: 8rem;
-    text-align: left;
-  }
 }
 
 /*--------------------------------------------------------------

@@ -237,6 +237,11 @@ section {
   align-items: center;
 }
 
+
+blockquote p {
+  display: inline;
+}
+
 .section-title {
 
   padding: 0rem;
@@ -259,9 +264,6 @@ section {
     margin: 1rem;
     padding: 2rem;
     position: relative;
-    
-
-    
 
     &::before {
       content: "";
@@ -305,6 +307,22 @@ section {
   ul {
     margin-left: 8rem;
     text-align: left;
+  }
+
+  blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid var(--light-orange);
+    padding: 0 5rem;
+    margin: 1rem 5rem;
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+  blockquote:before {
+    color: var(--dark-orange);
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    // margin-right: inherit;
+    vertical-align: -0.4em;
   }
 }
 

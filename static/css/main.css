@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*icons and fonts */
 @import url("https://unpkg.com/boxicons@2.1.1/css/boxicons.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
@@ -178,6 +179,9 @@ section {
   align-content: center;
   align-items: center; }
 
+blockquote p {
+  display: inline; }
+
 .section-title {
   padding: 0rem; }
   .section-title a {
@@ -227,6 +231,18 @@ section {
   .section-title ul {
     margin-left: 8rem;
     text-align: left; }
+  .section-title blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid var(--light-orange);
+    padding: 0 5rem;
+    margin: 1rem 5rem;
+    quotes: "“" "”" "‘" "’"; }
+  .section-title blockquote:before {
+    color: var(--dark-orange);
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    vertical-align: -0.4em; }
 
 @media (max-width: 940px) {
   .section-title h4 {

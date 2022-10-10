@@ -143,8 +143,6 @@ header {
   overflow-y: auto; }
   .sidebar-sticky ul {
     list-style: none; }
-    .sidebar-sticky ul:last-child {
-      margin-bottom: 2rem; }
     .sidebar-sticky ul a {
       margin-right: 1rem;
       background-color: var(--dark-green);

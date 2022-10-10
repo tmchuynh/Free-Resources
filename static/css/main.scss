@@ -175,21 +175,24 @@ header {
   overflow-x: hidden;
   overflow-y: auto;
 
-  /* Scrollable contents if viewport is shorter than content. */
-}
+  ul {
+    list-style: none;
+    a {
 
-.list-group-item {
-  background-color: var(--dark-green);
-  color: var(--off-white);
+      margin-right: 1rem;
+      background-color: var(--dark-green);
+      color: var(--off-white);
 
-  &.active {
-    background-color: var(--dark-orange);
-    border: none;
-  }
+      &.active {
+        background-color: var(--dark-orange);
+        border: none;
+      }
 
-  &:hover {
-    background-color: var(--light-orange);
-    color: black;
+      &:hover {
+        background-color: var(--light-orange);
+        color: black;
+      }
+    }
   }
 }
 
@@ -375,6 +378,7 @@ section {
   }
 
   a {
+
     &:active+.vanish,
     &:focus+.vanish,
     &:hover+.vanish {

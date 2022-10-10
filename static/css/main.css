@@ -136,18 +136,19 @@ header {
   height: calc(100vh - 48px);
   padding-top: 0.5rem;
   overflow-x: hidden;
-  overflow-y: auto;
-  /* Scrollable contents if viewport is shorter than content. */ }
-
-.list-group-item {
-  background-color: var(--dark-green);
-  color: var(--off-white); }
-  .list-group-item.active {
-    background-color: var(--dark-orange);
-    border: none; }
-  .list-group-item:hover {
-    background-color: var(--light-orange);
-    color: black; }
+  overflow-y: auto; }
+  .sidebar-sticky ul {
+    list-style: none; }
+    .sidebar-sticky ul a {
+      margin-right: 1rem;
+      background-color: var(--dark-green);
+      color: var(--off-white); }
+      .sidebar-sticky ul a.active {
+        background-color: var(--dark-orange);
+        border: none; }
+      .sidebar-sticky ul a:hover {
+        background-color: var(--light-orange);
+        color: black; }
 
 .nav-letters {
   text-transform: uppercase;

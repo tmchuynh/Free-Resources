@@ -317,186 +317,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-  # DevCard
-  --------------------------------------------------------------*/
-
-.introduction {
-  padding: 7rem 0rem 2rem 0rem;
-}
-
-.devcard {
-  justify-content: right;
-  padding: 3rem;
-  min-width: 30rem;
-  margin: auto;
-}
-
-.info-summary {
-  flex-direction: column;
-}
-
-.about-me {
-  padding: 4rem 3rem 1rem 3rem;
-  margin: 4rem 0rem 0rem 0rem;
-  text-align: center;
-  width: 100%;
-}
-
-.contact-info {
-  text-align: center;
-}
-
-@media (max-width: 1200px) {
-  .about-me {
-    margin: 0rem;
-    padding: 0rem 3rem 1rem 3rem;
-  }
-
-  .devcard,
-  #blog-list {
-    width: 90%;
-    margin: auto;
-    justify-content: center;
-  }
-
-  .devcard {
-    padding: 3rem 15px;
-    min-width: 50px;
-    width: 85%;
-  }
-}
-
-/*--------------------------------------------------------------
-  # Info Summary
-  --------------------------------------------------------------*/
-
-#social-badges {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-
-  img {
-    margin: 10px;
-    height: 1.5rem;
-  }
-}
-
-#threeD-commit {
-  width: 50%;
-}
-
-@media (max-width: 768px) {
-  #threeD-commit {
-    width: 90%;
-  }
-}
-
-@media (max-width: 1200px) {
-  #threeD-commit {
-    width: 75%;
-  }
-}
-
-/*--------------------------------------------------------------
-  # Dropdown Filter
-  --------------------------------------------------------------*/
-
-.dropdown2 {
-  display: flex;
-  float: left;
-
-  /* left: 5rem; */
-  position: relative;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.dropdown-toggle::after {
-  transform: rotate(-90deg);
-  margin-left: 1.255em;
-}
-
-.dropdown2 .dropdown-content {
-  display: none;
-  position: relative;
-  background-color: #f6f6f6;
-  min-width: max-content;
-  overflow: auto;
-  border: 1px solid #fff;
-  z-index: 99;
-
-  a {
-    color: black;
-    padding: 0.5rem 0.8rem;
-    text-decoration: none;
-    display: block;
-
-    &:hover {
-      background-color: #fff;
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .dropdown2 {
-    left: 4.5rem;
-
-    .dropdown-content {
-      top: -85px;
-      overflow: visible;
-    }
-  }
-}
-
-@media (max-width: 420px) {
-  .dropdown2 {
-    display: flex;
-    padding: 0px;
-    top: -70px;
-    left: 1rem;
-
-    .dropdown-content {
-      top: 10px;
-      overflow: visible;
-    }
-  }
-}
-
-/*--------------------------------------------------------------
-  # Newsletter form
---------------------------------------------------------------*/
-
-.newsletter-button {
-  border: 0;
-  border-radius: 5px;
-  background-color: var(--light-orange);
-  display: inline-block;
-  text-align: center;
-  font-size: 15px;
-  width: 100%;
-  font-weight: 500;
-  outline: none;
-  cursor: pointer;
-  -ms-flex: 1 0 100%;
-  overflow: hidden;
-  padding: 0.5rem 2rem;
-  margin: 0 5px 15px 5px;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  position: relative;
-  vertical-align: middle;
-}
-
-@media (max-width: 420px) {
-  .newsletter-button {
-    width: 90%;
-  }
-}
-
-/*--------------------------------------------------------------
   # Footer
   --------------------------------------------------------------*/
 
@@ -517,6 +337,7 @@ section {
     /*category names*/
     color: var(--light-orange);
     text-transform: uppercase;
+    font-family: 'Alkalami', serif;
     font-size: 16px;
     margin-top: 5px;
     margin-bottom: 15px;
@@ -540,6 +361,8 @@ section {
     display: block;
     margin-left: 50px;
     position: relative;
+    font-family: 'Alkalami', serif;
+    letter-spacing: .5rem;
   }
 }
 
@@ -558,7 +381,6 @@ section {
   }
 
   a {
-
     &:active+.vanish,
     &:focus+.vanish,
     &:hover+.vanish {
@@ -574,6 +396,10 @@ section {
     /* small text to left of icons */
     margin: 0;
     text-align: right;
+
+    a {
+      color: var(--dark-orange);
+    }
   }
 
   .social-icons {
@@ -599,7 +425,7 @@ section {
       margin-left: 5px;
       margin-right: 5px;
       border-radius: 100%;
-      background-color: #33353d;
+      background-color: var(--grey);
       color: #818a91;
       display: inline-block;
       text-align: center;

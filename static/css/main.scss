@@ -6,6 +6,8 @@
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Roboto+Mono&display=swap');
+
 /*--------------------------------------------------------------
   # Variables
 --------------------------------------------------------------*/
@@ -15,35 +17,36 @@
 
   /*variables*/
   /* Colors */
-  --light-orange:#DDA15E;
-  --dark-orange:#BC6C25;
-  --dark-green:#283618;
-  --white:#ffffff;
-  --off-white:#FEFAE0;
+  --light-orange: #DDA15E;
+  --dark-orange: #BC6C25;
+  --dark-green: #283618;
+  --white: #ffffff;
+  --off-white: #FEFAE0;
+  --grey: #505050;
 
   /* Typography */
-  --font-family:'Rufina', serif;
-  --line-height:1.5;
-  --font-size:18px;
-  --font-size-m:20px;
-  --font-size-l:22px;
-  --body-font-weight:400;
-  --bold-font-weight:700;
+  --font-family: 'Roboto Mono', monospace;
+  --line-height: 1.5;
+  --font-size: 18px;
+  --font-size-m: 20px;
+  --font-size-l: 22px;
+  --body-font-weight: 400;
+  --bold-font-weight: 700;
 
   /* Sizing */
-  --spacing-none:0;
-  --spacing-extra-small:.25rem;
-  --spacing-small:.5rem;
-  --spacing-medium:1rem;
-  --spacing-large:2rem;
-  --spacing-extra-large:4rem;
-  --spacing-extra-extra-large:8rem;
-  --spacing-extra-extra-extra-large:16rem;
+  --spacing-none: 0;
+  --spacing-extra-small: .25rem;
+  --spacing-small: .5rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 2rem;
+  --spacing-extra-large: 4rem;
+  --spacing-extra-extra-large: 8rem;
+  --spacing-extra-extra-extra-large: 16rem;
 
   /* Miscelaneous */
-  --border-radius:.25rem;
-  --hover-transition:all 150ms ease;
-  --bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --border-radius: .25rem;
+  --hover-transition: all 150ms ease;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
 
 body {
@@ -55,7 +58,13 @@ p {
   font-family: var(--font-family);
 }
 
-h1, h2, h3, h4, h5, ul, li {
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li {
   font-family: 'PT Serif', serif;
 }
 
@@ -180,6 +189,7 @@ a {
     background-color: var(--dark-orange);
     border: none;
   }
+
   &:hover {
     background-color: var(--light-orange);
     color: black;
@@ -190,14 +200,13 @@ a {
 
 
 .nav-letters {
-  // top: 34px;
   text-transform: uppercase;
   position: absolute;
   display: inline;
   color: var(--white);
   font-size: 27px;
-  // visibility: hidden;
-  margin-bottom: 2rem;
+  font-family: 'Alkalami', serif;
+  margin-bottom: 1rem;
 
   &:hover {
     color: var(--dark-orange);
@@ -343,7 +352,8 @@ section {
     padding: 0rem 3rem 1rem 3rem;
   }
 
-  .devcard, #blog-list {
+  .devcard,
+  #blog-list {
     width: 90%;
     margin: auto;
     justify-content: center;
@@ -548,7 +558,10 @@ section {
   }
 
   a {
-    &:active + .vanish, &:focus + .vanish, &:hover + .vanish {
+
+    &:active+.vanish,
+    &:focus+.vanish,
+    &:hover+.vanish {
       align-items: center;
       position: absolute;
       visibility: visible;
@@ -690,7 +703,8 @@ section {
       background-color: #0a66c2;
     }
 
-    &.codepen, &.devto {
+    &.codepen,
+    &.devto {
       color: #171717;
       background-color: #fff;
     }

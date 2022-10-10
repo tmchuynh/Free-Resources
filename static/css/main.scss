@@ -65,7 +65,7 @@ h4,
 h5,
 ul,
 li {
-  font-family: 'PT Serif', serif;
+  font-family: var(--font-family);
 }
 
 /*--------------------------------------------------------------
@@ -140,7 +140,7 @@ a {
 
 @media (min-width: 991.98px) {
   main {
-    padding-left: 30%;
+    padding-left: 15%;
   }
 }
 
@@ -148,19 +148,13 @@ a {
   height: 5rem;
 }
 
-/* Sidebar */
-
 .sidebar {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   padding: 58px 0 0;
-
-
-  /* Height of navbar */
-  // box-shadow: 29px 29px 45px #b1b1b1, -29px -29px 45px #ffffff;
-  width: 30% !important;
+  width: 15% !important;
   z-index: 600;
 }
 
@@ -195,9 +189,6 @@ a {
     color: black;
   }
 }
-
-// -----------------------------------------------------------
-
 
 .nav-letters {
   text-transform: uppercase;

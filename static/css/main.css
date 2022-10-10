@@ -101,58 +101,58 @@ a {
 /*--------------------------------------------------------------
   # Navigation Bar (Desktop)
 --------------------------------------------------------------*/
-#home-page-nav {
-  justify-content: center; }
+@media (min-width: 991.98px) {
+  main {
+    padding-left: 30%; } }
+#main-navbar {
+  height: 5rem; }
 
-.navbar {
-  padding-top: 4rem; }
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 58px 0 0;
+  /* Height of navbar */
+  width: 30% !important;
+  z-index: 600; }
 
-.nav-item, .dropdown-item {
-  min-width: fit-content;
-  text-transform: uppercase;
-  letter-spacing: 7px;
-  font-size: 16px; }
+@media (max-width: 990.98px) {
+  .sidebar {
+    width: 30%; } }
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* Scrollable contents if viewport is shorter than content. */ }
 
-@media (min-width: 1024px) {
-  .nav-item, .dropdown-item {
-    text-align: center; } }
-.nav-item a:hover, .nav-item a:focus, .nav-item a:hover i {
-  color: var(--light-orange);
+.list-group-item {
   background-color: var(--dark-green);
-  outline: none; }
-.nav-item i {
-  font-size: 14px;
-  margin-left: 20px;
-  color: var(--white); }
-
-.navbar-toggler {
-  padding-right: 2rem;
-  width: 1rem; }
-  .navbar-toggler:focus {
-    box-shadow: none; }
-
-.navbar-toggler-icon {
-  padding-right: 1rem; }
+  color: var(--off-white); }
+  .list-group-item.active {
+    background-color: var(--dark-orange);
+    border: none; }
+  .list-group-item:hover {
+    background-color: var(--light-orange);
+    color: black; }
 
 .nav-letters {
-  top: 34px;
   text-transform: uppercase;
   position: absolute;
   display: inline;
   color: var(--white);
   font-size: 27px;
-  visibility: hidden; }
+  margin-bottom: 2rem; }
   .nav-letters:hover {
     color: var(--dark-orange); }
 
 @media (min-width: 1400px) {
   .nav-letters {
     visibility: visible; } }
-#navbar-brand-text {
-  color: white; }
-  #navbar-brand-text:hover {
-    color: var(--light-orange); }
-
 /*--------------------------------------------------------------
   # Sections General
   --------------------------------------------------------------*/

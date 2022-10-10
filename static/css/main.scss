@@ -137,6 +137,9 @@ a {
 /*--------------------------------------------------------------
   # Navigation Bar (Desktop)
 --------------------------------------------------------------*/
+header {
+  margin-bottom: 5.5rem;
+}
 
 @media (min-width: 991.98px) {
   main {
@@ -234,7 +237,7 @@ section {
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
-    color: var(--grey-00);
+    color: var(--grey);
 
     &::before {
       content: "";
@@ -242,7 +245,7 @@ section {
       display: block;
       width: 125px;
       height: 1px;
-      background: var(--grey-00);
+      background: var(--grey);
       bottom: 1px;
       left: calc(50% - 60px);
     }
@@ -265,7 +268,7 @@ section {
     margin-top: 15px;
     padding-left: 6rem;
     position: relative;
-    color: var(--grey-00);
+    color: var(--grey);
     font-weight: bold;
     text-align: start;
     font-size: 24px;

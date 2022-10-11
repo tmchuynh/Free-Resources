@@ -233,16 +233,16 @@ blockquote p {
     text-align: left; }
   .section-title blockquote {
     background: #f9f9f9;
-    border-left: 10px solid var(--light-orange);
+    border-left: 0.625rem solid var(--light-orange);
     padding: 0 5rem;
     margin: 1rem 5rem;
     quotes: "“" "”" "‘" "’"; }
   .section-title blockquote:before {
     color: var(--dark-orange);
     content: open-quote;
-    font-size: 4em;
+    font-size: 2rem;
     line-height: 0.1em;
-    vertical-align: -0.4em; }
+    vertical-align: -0.4rem; }
 
 @media (max-width: 940px) {
   .section-title h4 {

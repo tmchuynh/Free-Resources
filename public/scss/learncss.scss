@@ -1,0 +1,21 @@
+.section-title {
+    blockquote {
+        padding: 0rem 2rem;
+    }
+    blockquote:before {
+        content: "";
+    }
+
+    .learn-more {
+        display: grid;
+    }
+
+    button:hover {
+        background-color: var(--dark-orange);
+        box-shadow: inset 0 0 0 2px white;
+        a {
+            color: white;
+        }
+    }
+}
+

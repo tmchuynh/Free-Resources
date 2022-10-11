@@ -1,0 +1,27 @@
+{
+  "name": "free-resources",
+  "version": "1.0.0",
+  "description": "Learn web development online",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch public/scss -o public/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmchuynh/Free-Resources.git"
+  },
+  "author": "Tina Huynh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tmchuynh/Free-Resources/issues"
+  },
+  "homepage": "https://github.com/tmchuynh/Free-Resources#readme",
+  "keywords": [
+    "web",
+    "development",
+    "free",
+    "resources",
+    "online"
+  ]
+}

@@ -251,7 +251,7 @@ blockquote p {
 
     &:hover {
       color: var(--dark-orange);
-      
+
     }
   }
 
@@ -304,6 +304,7 @@ blockquote p {
     margin: auto;
     width: 90%;
   }
+
   ul {
     margin-left: 8rem;
     text-align: left;
@@ -314,8 +315,9 @@ blockquote p {
     border-left: 0.625rem solid var(--light-orange);
     padding: 0 5rem;
     margin: 1rem 5rem;
-    quotes: "\201C""\201D""\2018""\2019";
+    quotes: "\201C" "\201D" "\2018" "\2019";
   }
+
   blockquote:before {
     color: var(--dark-orange);
     content: open-quote;
@@ -358,7 +360,6 @@ blockquote p {
 /*--------------------------------------------------------------
   # Footer
   --------------------------------------------------------------*/
-
 .site-footer {
   background-color: var(--dark-green);
   padding: 2.8125rem 0 1.25rem;
@@ -370,6 +371,10 @@ blockquote p {
     /*line across*/
     border-top-color: var(--light-orange);
     opacity: 0.5;
+    width: 200%;
+    position: absolute;
+    left: -22rem;
+    margin: -28rem;
   }
 
   h6 {
@@ -380,41 +385,19 @@ blockquote p {
     font-size: 1rem;
     margin-top: 0.3125rem;
     margin-bottom: 1rem;
-    letter-spacing: 0.625rem;
+    letter-spacing: 0.75rem;
   }
 
-  p {
-    text-align: justify;
-  }
-}
-
-.footer-links {
-  /* ul element itself */
-  padding-left: 0;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-
-  li {
-    /* list elements */
-    display: block;
-    margin-left: 3.125rem;
-    position: relative;
-    font-family: 'Alkalami', serif;
-    letter-spacing: .5rem;
-  }
-}
-
-.site-footer {
   a {
     /*the hyperlinks*/
+
     color: var(--white);
     text-decoration: none;
     margin-right: 0.625rem;
   }
 
   .vanish {
-    color: var(--off-white);
+    color: var(--light-orange);
     display: none;
     font-size: 1.375rem;
   }
@@ -432,14 +415,35 @@ blockquote p {
     }
   }
 
+  p {
+    text-align: justify;
+  }
+
+  .footer-links {
+    /* ul element itself */
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  
+    li {
+      /* list elements */
+      display: block;
+      margin-left: 3.125rem;
+      position: relative;
+      font-family: 'Alkalami', serif;
+      letter-spacing: .5rem;
+    }
+  }
+
+  .footer-text {
+    margin-top: 1rem;
+  }
+
   .copyright-text {
     /* small text to left of icons */
     margin: 0;
     text-align: right;
-
-    a {
-      color: var(--dark-orange);
-    }
   }
 
   .social-icons {

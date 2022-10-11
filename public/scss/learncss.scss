@@ -1,10 +1,47 @@
 .section-title {
-    blockquote {
-        padding: 0rem 2rem;
+    #liveAlertPlaceholder {
+        text-align: center;
+        display: grid;
+        justify-content: center;
+        position: relative;
+        .alert {
+            
+            padding: 1.25rem 5rem;
+            border-radius: 0.5rem;
+            width: 100%;
+            button {
+                margin-left: 1rem;
+                position: absolute;
+                top: 0.25rem;
+                right: 0.5rem;
+            }
+        }
     }
-    blockquote:before {
-        content: "";
+    .command {
+        position: relative;
+        i {
+            position: absolute;
+            left: 7rem;
+            top: 0.5rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 5;
+            &:hover {
+                color: var(--dark-orange);
+            }
+        }
+        blockquote {
+            padding: 1rem 4rem;
+            position: relative;
+            
+        }
+        blockquote:before {
+            content: "";
+        }
     }
+
+
+
 
     .learn-more {
         display: grid;

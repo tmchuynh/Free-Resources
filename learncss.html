@@ -40,7 +40,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="index.html#front-end" class="list-group-item list-group-item-action py-2 ripple active">
+                        <a href="index.html#front-end"
+                            class="list-group-item list-group-item-action py-2 ripple active">
                             </i><span>Front End Development</span>
                         </a>
                     </li>
@@ -147,7 +148,8 @@
                         </li>
                     </ul>
                     <li>
-                        <a href="index.html#back-end" class="list-group-item list-group-item-action py-2 ripple"></i><span>Back
+                        <a href="index.html#back-end"
+                            class="list-group-item list-group-item-action py-2 ripple"></i><span>Back
                                 End
                                 Development</span></a>
                     </li>
@@ -180,7 +182,8 @@
                         </li>
                     </ul>
                     <li>
-                        <a href="index.html#code-editors" class="list-group-item list-group-item-action py-2 ripple"><span>Code
+                        <a href="index.html#code-editors"
+                            class="list-group-item list-group-item-action py-2 ripple"><span>Code
                                 Editors</span></a>
                     </li>
                     <ul>
@@ -203,7 +206,8 @@
                         </li>
                     </ul>
                     <li>
-                        <a href="index.html#open-source" class="list-group-item list-group-item-action py-2 ripple"><span>Open
+                        <a href="index.html#open-source"
+                            class="list-group-item list-group-item-action py-2 ripple"><span>Open
                                 Source
                                 Resources</span></a>
                     </li>
@@ -337,16 +341,32 @@
                 decide to change say a color you don’t have to change it 1000 times. You can just change your primary
                 color variable in one place and you’re good to go. </p>
             <h2>Installing Sass</h2>
+            <div id="liveAlertPlaceholder"></div>
             <p>If you use Node.js, you can install Sass using npm by running</p>
-            <blockquote>npm install -g sass</blockquote>
+            <div class="command">
+                <i onclick="copyText(this.getAttribute('data-target'))" id="liveAlertBtn" data-target="liveAlertBtn" class="bi bi-clipboard copy_btn"></i>
+                <blockquote>npm install -g sass</i></blockquote>
+            </div>
             <p>To run Sass files from the command file, run</p>
-            <blockquote>sass input.scss output.css</blockquote>
+            <div class="command">
+                <i onclick="copyText(this.getAttribute('data-target'))" id="liveAlertBtn2" data-target="liveAlertBtn2"  class="bi bi-clipboard copy_btn"></i>
+                <blockquote>sass input.scss output.css</blockquote>
+            </div>
             <p>To tell Sass to watch the file and update the CSS every time when the Sass file changes, run</p>
-            <blockquote>sass --watch input.scss:output.css</blockquote>
+            <div class="command">
+                <i onclick="copyText(this.getAttribute('data-target'))"id="liveAlertBtn3" data-target="liveAlertBtn3" class="bi bi-clipboard copy_btn"></i>
+                <blockquote>sass --watch input.scss:output.css</blockquote>
+            </div>
             <p>If you have many Sass files, then you can also tell Sass to watch the entire directory with</p>
-            <blockquote>sass --watch app/sass:public/stylesheets</blockquote>
+            <div class="command">
+                <i onclick="copyText(this.getAttribute('data-target'))" id="liveAlertBtn4" data-target="liveAlertBtn4" class="bi bi-clipboard copy_btn"></i>
+                <blockquote>sass --watch app/sass:public/stylesheets</blockquote>
+            </div>
             <p>Check full Sass documentation by using the following command</p>
-            <blockquote>sass -help</blockquote>
+            <div class="command">
+                <i onclick="copyText(this.getAttribute('data-target'))" id="liveAlertBtn5" data-target="liveAlertBtn5" class="bi bi-clipboard copy_btn"></i>
+                <blockquote>sass -help</blockquote>
+            </div>
         </section>
 
         <!--Advantages-->
@@ -501,13 +521,14 @@
     <script src="public/js/nav.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="public/js/graph.js"></script>
 
     <script>
         $(window).on("load", function () {
             $("#container").fadeOut("slow");
         })
     </script>
+
+    <script src="public/js/copytext.js"></script>
 
 </body>
 

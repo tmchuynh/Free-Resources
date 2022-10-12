@@ -142,6 +142,16 @@ header {
   height: calc(100vh - 3rem);
   padding-top: 0.5rem;
   overflow: hidden; }
+  .sidebar-sticky::-webkit-scrollbar {
+    width: 1rem;
+    margin: 0;
+    padding: 0; }
+  .sidebar-sticky::-webkit-scrollbar-track {
+    background-color: white;
+    border-radius: 10px; }
+  .sidebar-sticky::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--dark-orange); }
   .sidebar-sticky:hover {
     overflow-y: scroll; }
   .sidebar-sticky ul {

@@ -178,10 +178,11 @@ header {
   top: 0;
   height: calc(100vh - 3rem);
   padding-top: 0.5rem;
-  overflow-x: hidden;
-  overflow-y: auto;
 
-
+  overflow: hidden;
+  &:hover {
+    overflow-y: scroll;
+  }
 
   ul {
     list-style: none;

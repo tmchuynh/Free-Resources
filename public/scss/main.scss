@@ -68,6 +68,7 @@ li {
   font-family: var(--font-family);
 }
 
+
 img {
   margin: 1rem auto;
   position: relative;
@@ -186,7 +187,7 @@ header {
     list-style: none;
 
     a {
-
+      border: none;
       margin-right: 1rem;
       background-color: var(--dark-green);
       color: var(--off-white);
@@ -305,10 +306,15 @@ blockquote p {
     width: 90%;
   }
 
+  ol, ul {
+    padding-left: 7rem;
+  }
+
   ul {
     margin-left: 8rem;
     text-align: left;
   }
+
 
   blockquote {
     background: #f9f9f9;

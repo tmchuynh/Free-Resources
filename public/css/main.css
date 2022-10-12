@@ -146,6 +146,7 @@ header {
   .sidebar-sticky ul {
     list-style: none; }
     .sidebar-sticky ul a {
+      border: none;
       margin-right: 1rem;
       background-color: var(--dark-green);
       color: var(--off-white); }
@@ -230,6 +231,8 @@ blockquote p {
   .section-title p {
     margin: auto;
     width: 90%; }
+  .section-title ol, .section-title ul {
+    padding-left: 7rem; }
   .section-title ul {
     margin-left: 8rem;
     text-align: left; }

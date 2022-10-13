@@ -242,10 +242,11 @@ blockquote p {
   .section-title p {
     margin: auto;
     width: 90%; }
-  .section-title ol, .section-title ul {
+  .section-title ol,
+  .section-title ul {
     padding-left: 7rem; }
   .section-title ul {
-    margin-left: 8rem;
+    margin-left: 1rem;
     text-align: left; }
   .section-title blockquote {
     background: #f9f9f9;

@@ -248,6 +248,8 @@ blockquote p {
   .section-title ul {
     margin-left: 1rem;
     text-align: left; }
+    .section-title ul p {
+      margin: auto 0; }
   .section-title blockquote {
     background: #f9f9f9;
     border-left: 0.625rem solid var(--light-orange);

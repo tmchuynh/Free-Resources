@@ -23,6 +23,7 @@
 
     <link href="public/css/home.css" rel="stylesheet">
     <link href="public/css/main.css" rel="stylesheet">
+    <link href="public/css/learncss.css" rel="stylesheet">
 </head>
 
 <body>
@@ -301,8 +302,194 @@
     <!--Main layout-->
     <main>
 
-        <!--start here-->
+        <!--intro to sass-->
+        <section class="section-title intro-to-sass" id="intro-sass">
+            <h2>Introduction to SASS</h2>
+            <blockquote>Sass is the most mature, stable, and powerful professional grade CSS extension language in the
+                world.<br><br>Sass is completely compatible with all versions of CSS. We take this compatibility
+                seriously, so that you can seamlessly use any available CSS libraries. Sass boasts more features and
+                abilities than any other CSS extension language out there. The Sass Core Team has worked endlessly to
+                not only keep up, but stay ahead. There are an endless number of frameworks built with Sass. Compass,
+                Bourbon, and Susy just to name a few. Sass is actively supported and developed by a consortium of
+                several tech companies and hundreds of developers.</blockquote>
+            <h2>Installing Sass</h2>
+            <div id="liveAlertPlaceholder"></div>
+            <p>If you use Node.js, you can install Sass using npm by running</p>
+            <div class="command">
+                <i onclick="copyText(this.getAttribute('data-target'))" id="liveAlertBtn" data-target="liveAlertBtn"
+                    class="bi bi-clipboard copy_btn"></i>
+                <blockquote>npm install -g sass</i></blockquote>
+            </div>
+            <p>Note that this will install the pure JavaScript implementation of Sass, which runs somewhat slower than
+                the other options listed here. But it has the same interface, so it’ll be easy to swap in another
+                implementation later if you need a bit more speed!</p>
+            <br>
+            <p>If you use the Chocolatey package manager for Windows, you can install Dart Sass using npm by running</p>
+            <div class="command">
+                <i onclick="copyText(this.getAttribute('data-target'))" id="liveAlertBtn" data-target="liveAlertBtn"
+                    class="bi bi-clipboard copy_btn"></i>
+                <blockquote>choco install sass</i></blockquote>
+            </div>
+            <p>If you use the Homebrew package manager for Mac OC X or Linux, you can install Dart Sass using npm by
+                running</p>
+            <div class="command">
+                <i onclick="copyText(this.getAttribute('data-target'))" id="liveAlertBtn" data-target="liveAlertBtn"
+                    class="bi bi-clipboard copy_btn"></i>
+                <blockquote>brew install sass/sass/sass</i></blockquote>
+            </div>
+            <br>
+            <p>To run Sass files from the command file, run</p>
+            <div class="command">
+                <i onclick="copyText(this.getAttribute('data-target'))" id="liveAlertBtn2" data-target="liveAlertBtn2"
+                    class="bi bi-clipboard copy_btn"></i>
+                <blockquote>sass input.scss output.css</blockquote>
+            </div>
+            <p>To tell Sass to watch the file and update the CSS every time when the Sass file changes, run</p>
+            <div class="command">
+                <i onclick="copyText(this.getAttribute('data-target'))" id="liveAlertBtn3" data-target="liveAlertBtn3"
+                    class="bi bi-clipboard copy_btn"></i>
+                <blockquote>sass --watch input.scss:output.css</blockquote>
+            </div>
+            <p>If you have many Sass files, then you can also tell Sass to watch the entire directory with</p>
+            <div class="command">
+                <i onclick="copyText(this.getAttribute('data-target'))" id="liveAlertBtn4" data-target="liveAlertBtn4"
+                    class="bi bi-clipboard copy_btn"></i>
+                <blockquote>sass --watch app/sass:public/stylesheets</blockquote>
+            </div>
+            <p>Check full Sass documentation by using the following command</p>
+            <div class="command">
+                <i onclick="copyText(this.getAttribute('data-target'))" id="liveAlertBtn5" data-target="liveAlertBtn5"
+                    class="bi bi-clipboard copy_btn"></i>
+                <blockquote>sass -help</blockquote>
+            </div>
+        </section>
 
+        <!--basics-->
+        <section class="section-title sass-basics" id="sass-basics">
+            <h2>Sass Basics</h2>
+            <p>Before you can use Sass, you need to set it up on your project. If you want to just browse here, go
+                ahead, but we recommend you go install Sass first. CSS on its own can be fun, but stylesheets are
+                getting larger, more complex, and harder to maintain. This is where a preprocessor can help. Sass has
+                features that don't exist in CSS yet like nesting, mixins, inheritance, and other nifty goodies that
+                help you write robust, maintainable CSS.</p>
+            <br>
+            <p>Once you start tinkering with Sass, it will take your preprocessed Sass file and save it as a normal CSS
+                file that you can use in your website.
+                The most direct way to make this happen is in your terminal. Once Sass is installed, you can compile
+                your Sass to CSS using the sass command. You'll need to tell Sass which file to build from, and where to
+                output CSS to. For example, running sass input.scss output.css from your terminal would take a single
+                Sass file, input.scss, and compile that file to output.css.
+            </p>
+            <p>You can also watch individual files or directories with the --watch flag. The watch flag tells Sass to
+                watch your source files for changes, and re-compile CSS each time you save your Sass. If you wanted to
+                watch (instead of manually build) your input.scss file, you'd just add the watch flag to your command,
+                like so:</p>
+            <div class="command">
+                <i onclick="copyText(this.getAttribute('data-target'))" id="liveAlertBtn5" data-target="liveAlertBtn5"
+                    class="bi bi-clipboard copy_btn"></i>
+                <blockquote>sass --watch input.scss output.css</blockquote>
+            </div>
+            <p>You can watch and output to directories by using folder paths as your input and output, and separating
+                them with a colon. In this example:</p>
+            <div class="command">
+                <i onclick="copyText(this.getAttribute('data-target'))" id="liveAlertBtn5" data-target="liveAlertBtn5"
+                    class="bi bi-clipboard copy_btn"></i>
+                <blockquote>sass --watch app/sass:public/stylesheets</blockquote>
+            </div>
+            <p>Sass would watch all files in the app/sass folder for changes, and compile CSS to the public/stylesheets
+                folder.</p>
+        </section>
+
+        <!--variables-->
+        <section class="section-title variables" id="variables">
+            <h2>Variables</h2>
+            <p>Sass uses the $ symbol to make something a variable. Here's an example:</p>
+            <div class="text-center">
+                <img src="public/images/variables.png">
+            </div>
+            <p>When the Sass is processed, it takes the variables we define for the $font-stack and $primary-color and
+                outputs normal CSS with our variable values placed in the CSS. This can be extremely powerful when
+                working with brand colors and keeping them consistent throughout the site.</p>
+        </section>
+
+        <!--nesting-->
+        <section class="section-title nesting" id="nesting">
+            <h2>Nesting</h2>
+            <p>When writing HTML you've probably noticed that it has a clear nested and visual hierarchy. CSS, on the
+                other hand, doesn't.
+                Sass will let you nest your CSS selectors in a way that follows the same visual hierarchy of your HTML.
+                Be aware that overly nested rules will result in over-qualified CSS that could prove hard to maintain
+                and is generally considered bad practice.
+                With that in mind, here's an example of some typical styles for a site's navigation:</p>
+            <div class="text-center">
+                <img src="public/images/nesting.png">
+            </div>
+            <p>You'll notice that the ul, li, and a selectors are nested inside the nav selector. This is a great way to
+                organize your CSS and make it more readable.</p>
+        </section>
+
+        <!--modules-->
+        <section class="section-title modules" id="modules">
+            <h2>Modules</h2>
+            <p>You don't have to write all your Sass in a single file. You can split it up however you want with the
+                @use rule. This rule loads another Sass file as a module, which means you can refer to its variables,
+                mixins, and functions in your Sass file with a namespace based on the filename. Using a file will also
+                include the CSS it generates in your compiled output!</p>
+            <div class="text-center">
+                <img src="public/images/modules.png">
+            </div>
+            <p>Notice we're using @use 'base'; in the styles.scss file. When you use a file you don't need to include
+                the file extension. Sass is smart and will figure it out for you.</p>
+        </section>
+
+        <!--Inheritance-->
+        <section class="section-title inheritance" id="inheritance">
+            <h2>Inheritance</h2>
+            <p>Using @extend lets you share a set of CSS properties from one selector to another. In our example we're
+                going to create a simple series of messaging for errors, warnings and successes using another feature
+                which goes hand in hand with extend, placeholder classes. A placeholder class is a special type of class
+                that only prints when it is extended, and can help keep your compiled CSS neat and clean.</p>
+            <div class="text-center">
+                <img src="public/images/inheritance.png">
+            </div>
+            <p>What the above code does is tells .message, .success, .error, and .warning to behave just like
+                %message-shared. That means anywhere that %message-shared shows up, .message, .success, .error, &
+                .warning will too. The magic happens in the generated CSS, where each of these classes will get the same
+                CSS properties as %message-shared. This helps you avoid having to write multiple class names on HTML
+                elements.<br><br>You can extend most simple CSS selectors in addition to placeholder classes in Sass,
+                but using placeholders is the easiest way to make sure you aren't extending a class that's nested
+                elsewhere in your styles, which can result in unintended selectors in your CSS.</p>
+        </section>
+
+        <!--operators-->
+        <section class="section-title operators" id="operators">
+            <h2>Operators</h2>
+            <p>Doing math in your CSS is very helpful. Sass has a handful of standard math operators like +, -, *,
+                math.div(), and %. In our example we're going to do some simple math to calculate widths for an article
+                and aside.</p>
+            <div class="text-center">
+                <img src="public/images/operators.png">
+            </div>
+        </section>
+
+        <!--keep learning-->
+        <section class="section-title keep-learning" id="keep-learning-sass">
+            <h2>Documentation for Sass</h2>
+            <p>
+                You don't have to learn Sass. However, it's very beneficial. With Sass, you can truly be more efficient
+                and write more semantic and DRY CSS.
+                Sass facilitates you to write clean, easy and less CSS in a programming construct. It contains fewer
+                codes so you can write CSS quicker. It is more stable, powerful, and elegant because it is an extension
+                of CSS. So, it is easy for designers and developers to work more efficiently and quickly.
+                SASS boosts your performance and avoids repetition of the same CSS property and their assigned values by
+                using mixins and variables. It enables you to change variables in your Bootstrap based on your need.</p>
+            <br>
+            <p>To keep learning about SASS, there's helpful documentation found here...</p>
+            <div class="container learn-more">
+                <button class="btn"><a href="https://sass-lang.com/documentation/">Documentation</a></button>
+                <button class="btn"><a href="https://sass-lang.com/guide">SASS Guide</a></button>
+            </div>
+        </section>
 
         <!-- back to top button -->
         <button class="btn" onclick="topFunction()" id="backToTop" title="Go to top"><i
@@ -425,16 +612,18 @@
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="static/js/nav.js"></script>
+    <script src="public/js/nav.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="static/js/graph.js"></script>
+    <!-- <script src="static/js/graph.js"></script> -->
 
     <script>
         $(window).on("load", function () {
             $("#container").fadeOut("slow");
         })
     </script>
+
+    <script src="public/js/copytext.js"></script>
 
 </body>
 

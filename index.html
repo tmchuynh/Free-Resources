@@ -33,14 +33,14 @@
             <div class="position-sticky sidebar-sticky">
                 <ul class="list-group list-group-flush ms-3 mt-4">
                     <li>
-                        <a href="index.html" class="list-group-item list-group-item-action py-2 ripple"
+                        <a href="index.html" class="list-group-item list-group-item-action py-2 ripple active"
                             aria-current="true">
                             <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Main dashboard</span>
                         </a>
                     </li>
                     <li>
                         <a href="index.html#front-end"
-                            class="list-group-item list-group-item-action py-2 ripple active">
+                            class="list-group-item list-group-item-action py-2 ripple ">
                             </i><span>Front End Development</span>
                         </a>
                     </li>
@@ -113,7 +113,7 @@
                             </li>
                         </ul>
                         <li>
-                            <a href="index.html#packages" class="list-group-item list-group-item-action py-2 ripple">
+                            <a href="#packages" class="list-group-item list-group-item-action py-2 ripple">
                                 </i><span>Package Managers</span>
                             </a>
                         </li>
@@ -339,13 +339,13 @@
         <!--Front end dev-->
         <section class="section-title front-end-dev" id="front-end">
             <h2>
-                <a href="#">Starting Out with Front End Development</a>
+                <a href="">Starting Out with Front End Development</a>
             </h2>
             <p>The front end of an application typically refers to the layer that represents the UI (user interface).
                 This can include anything from a static site with HTML and CSS to a full React app that powers the UI. -
                 Colby Fayock</p>
             <div class="text-center">
-                <img src="/public/images/frontend.png">
+                <img src="public/images/frontend.png">
             </div>
             <h4>
                 <a href="learnhtml.html">Let's Start with HTML</a>
@@ -761,12 +761,14 @@
     <script src="public/js/nav.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="public/js/graph.js"></script>
+    <!-- <script src="public/js/graph.js"></script> -->
 
     <script>
         $(window).on("load", function () {
             $("#container").fadeOut("slow");
         })
+
+
     </script>
 
 </body>

@@ -37,3 +37,22 @@ toggler.onclick = function() {
     console.log(mobile);
 }
 // End
+
+    var link = document.getElementsByClassName(".sidebar-sticky a");
+    link.onclick = function() {
+        var active = document.querySelector(".sidebar-sticky li.active");
+
+        active.classList.remove("active");
+        link.classList.add("active");
+        console.log(link.classList);
+    }
+
+    // $('.sidebar-sticky ul li a').click(function(e) {
+
+
+    //     $('.sidebar-sticky ul li.active'). ('active');
+
+    //     var $parent = $(this).parent();
+    //     $parent.addClass('active');
+    //     // e.preventDefault();
+    // });

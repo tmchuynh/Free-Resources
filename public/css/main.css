@@ -56,7 +56,8 @@ li {
 
 img {
   margin: 1rem auto;
-  position: relative; }
+  position: relative;
+  max-width: 40%; }
 
 /*--------------------------------------------------------------
   # Text Colors
@@ -87,12 +88,6 @@ img {
   text-align: center;
   box-shadow: inset 0 0 0 2px var(--light-orange);
   transition: var(--hover-transition); }
-
-/*--------------------------------------------------------------
-  # Images
---------------------------------------------------------------*/
-img {
-  max-width: 100%; }
 
 /*--------------------------------------------------------------
   # Links
@@ -248,8 +243,12 @@ blockquote p {
   .section-title ul {
     margin-left: 1rem;
     text-align: left; }
-    .section-title ul p {
-      margin: auto 0; }
+  .section-title ol ul {
+    padding-left: 4rem; }
+    .section-title ol ul li {
+      list-style: square; }
+  .section-title ol p {
+    margin: auto 0; }
   .section-title blockquote {
     background: #f9f9f9;
     border-left: 0.625rem solid var(--light-orange);

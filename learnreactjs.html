@@ -10,7 +10,7 @@
     <meta name="description" content="">
 
     <!-- FAVICON(S) -->
-    <link rel="shortcut icon" type="image/x-icon" href="public/images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.ico">
 
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -22,7 +22,6 @@
         rel="stylesheet">
 
     <link href="public/css/main.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -69,7 +68,8 @@
                         </li>
                         <ul>
                             <li>
-                                <a href="learntypescript.html" class="list-group-item list-group-item-action py-2 ripple">
+                                <a href="learntypescript.html"
+                                    class="list-group-item list-group-item-action py-2 ripple">
                                     </i><span>TypeScript</span>
                                 </a>
                             </li>
@@ -301,104 +301,107 @@
     <!--Main layout-->
     <main>
 
-        <!--anatomy-->
-        <section class="section-title anatomy" id="anatomy">
-            <h2>Anatomy of an HTML element</h2>
-            <p>HTML is a markup language that defines the structure of your content. HTML consists of a series of
-                elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain
-                way, or act a certain way. The enclosing tags can make a word or image hyperlink to somewhere else, can
-                italicize words, can make the font bigger or smaller, and so on. HTML consists of tags like &lt;h1&gt;
-                (for heading) and &lt;p&gt; (for paragraph).</p>
+        <!--intro-->
+        <section class="section-title intro-reactjs" id="intro-reactjs">
+            <h2>Introduction to ReactJS</h2>
+            <p>
+                The React. js framework is an open-source JavaScript framework and library developed by Facebook. It's
+                used for building interactive user interfaces and web applications quickly and efficiently with
+                significantly less code than you would with vanilla JavaScript. React is a declarative, efficient, and
+                flexible JavaScript library for building user interfaces. ReactJS is an open-source, component-based
+                front-end library responsible only for the view layer of the application. It is maintained by Facebook.
+                Moreover, React Js makes Front-end development very easy.
+                Every front-end developer starts their journey with HTML and CSS. So before you start learning to react
+                you should have a good command of writing HTML and CSS.<br><br>
+                To get an overview of what React is, you can write React code directly in HTML. But in order to use
+                React in production, you need npm and Node.js installed.
+                Both HTML and CSS are integral to any web development project. If you have these skills already, then
+                learning React should be a relatively straightforward process. It has its own unique set of challenges,
+                but it is an excellent tool to have in order to start or further your career as a web developer.</p>
             <div class="text-center">
-                <img src="/public/images/tags.png">
+                <img src="public/images/All-about-react-JS.png">
             </div>
-            <p>There are four main parts that you see above:</p>
+        </section>
+
+        <!--why reactjs-->
+        <section class="section-title why-reactjs" id="why-reactjs">
+            <h2>Why Learn ReactJS</h2>
+            <p>One of the main benefits of using React JS is its potential to reuse components. It saves time for
+                developers as they don't have to write various codes for the same features. Furthermore, if any changes
+                are made in any particular part, it will not affect other parts of the application. Its aim is to allow
+                developers to easily create fast user interfaces for websites and applications alike. The main concept
+                of React. js is virtual DOM. Today, there are
+                over 220,000 live websites using React. Not only that, but industry giants like Apple, Netflix, Paypal,
+                and many others have also already started using React JS in their software productions.</p>
+            <br>
+            <p>The key benefits of ReactJS for front-end development include speed, flexisbility, performance,
+                usability, and reusable components. It's easy to learn, helps build rich user interfaces, allows writing
+                custom components, uplifts developers' productivity, offers fast renderin, is SEO-friendly, comes with
+                useful developer toolsets, has a strong community support, offers better code stability, and is used by
+                many fortune 500 companies. ReactJS also extends your tools and capacities, is UI-focused, provides a
+                unique abstraction layer, and makes template designing easy!</p>
+        </section>
+
+        <!--ReactJS vs Angular-->
+        <section class="section-title comparison" id="comparison">
+            <h2>ReactJS vs AngularJS</h2>
+            <p>When using react js vs angular, ReactJs is on Open Source Framework while AngularJs is on MVC framework.
+                ReactJS works on Virtual DOM while AngularJs works on Regular DOM. ReactJs support Javascript while
+                AngularJS support Javascript as well as HTML.
+                The primary difference between AngularJS and ReactJS lies in the state of its management. AngularJS has
+                data binding bundled in by default, whereas React is generally augmented by Redux to give unidirectional
+                data flow and work with immutable data.
+                Since React is a lightweight UI library, the learning curve is much simpler than in Angular. A list of
+                things you have to absorb is quite short: JSX, a router library and a state management library. Also,
+                it's necessary to have knowledge of writing components, managing internal state and using props.</p>
+            <div class="text-center">
+                <img src="public/images/angularjs-vs-reactjs.jpeg">
+            </div>
+            <h4>Benefits of ReactJS</h4>
             <ul>
-                <li><b>The opening tag</b>, wrapped in opening and closing angle brackets.</li>
-                <li><b>The closing tag</b>, also wrapped in opening and closing brackets but it also includes a forward
-                    slash BEFORE the element name that states this is where the element ends.</li>
-                <li><b>The content</b>, which in this case is just text.</li>
-                <li><b>The element</b>, which is the entire thing together as a whole.</li>
+                <li>It doesn't have a steep learning curve.</li>
+                <li>ReactJS uses HTML like syntax known as JSX (JavaScript XML) so that JavaScript and HTML code can be
+                    written in one file.</li>
+                <li>Developers can add cynamic content to a page by making changes to the DOM.</li>
+                <li>High performance and cross-platform support.</li>
+                <li>Components are immutable, thus giving a unidirectional binding and reasonable control throughout the
+                    application.</li>
+                <li>ReactJS applications have individual reusable components with their own control and logic.</li>
+                <li>ReactJS optimized performance by creating a copy of a web page's DOM, called a virtual DOM.</li>
             </ul>
-            <p>Elements can also have attributes such as the one below: </p>
-            <div class="text-center">
-                <img src="/public/images/attributes.png">
-            </div>
-            <p>Attributes should always have a space between it and the element name, the attribute name followed by an
-                equal sign, and the attribute value wrapped in quotation marks. You will see different developers use
-                single and/or double quotes. This is a matter of style. You can feel free to choose whichever you
-                prefer, but it is best practice to stick with one style in an entire project.</p><br>
-            <p>Elements can also be put inside other elements, which is called <b>nesting.</b> An example would be using
-                &lt;b&gt; to make text bold.</p>
-        </section>
-
-        <!--page structure-->
-        <section class="section-title pg-structure" id="structure">
-            <h2>Starting Your HTML Document</h2>
-            <div class="text-center">
-                <img src="/public/images/HTML-Basic-Format.png">
-            </div>
+            <h4>Applications of ReactJS</h4>
+            <p>React is extensively used for building UI of Single Page Applications (SPA). It works seamlessly for both
+                mobile and desktop applications. Facebook, Bloomberg, Airbnb, Instagram, and Skype are examples of web
+                applications that use React Native, the framework based on React JS.</p>
+            <h4>Benefits of AngularJS</h4>
             <ul>
-                <li>
-                    <code>&lt;!DOCTYPE html&gt;</code> is a required preamble. It is needed to make sure your document
-                    behaves correctly.
-                </li>
-                <li>
-                    <code>&lt;html&gt;</code> This element wraps all the content on the entire page and is sometimes
-                    known as the root element.
-                </li>
-                <li>
-                    <code>&lt;head&gt;</code> This element acts as a container for the things you need to include on the
-                    HTML page that isn't shown to your viewers.
-                </li>
-                <li>
-                    <code>&lt;meta charset="utf-8"&gt;</code> This element sets the character set of your document to
-                    UTF-8, which includes most characters from the vast majority of written languages.
-                </li>
-                <li>
-                    <code>&lt;meta name="viewport" content="width=device-width"&gt;</code> This viewport element ensures
-                    the page render at the width of viewport, preventing mobile browsers from rendering pages wider than
-                    the viewport and then shrinking them down.
-                </li>
-                <li>
-                    <code>&lt;title&gt;</code> This sets the title of your page that appears in the browser tab and is
-                    used to describe the page when it's bookmarked.
-                </li>
-                <li>
-                    <code>&lt;body&gt;</code> This contains all the content you want to show to your viewers when they
-                    visit your page.
-                </li>
+                <li>Implementation of the MVC pattern.</li>
+                <li>Cross-platform support.</li>
+                <li>Speeds up development as very little coding is required.</li>
+                <li>Developers can quickly build progressive apps without a heavy installation process.</li>
+                <li>Suitable for creating desktop and mobile apps.</li>
+                <li>Powerful template syntax to easily create UI views.</li>
             </ul>
+            <h4>Applications of AngularJS</h4>
+            <p>We can use Angular for large-scale enterprise applications, single-page applications, and Progressive Web Applications (PWAs).</p>
         </section>
 
-        <!--fundamentals-->
-        <section class="section-title fundamentals" id="fundamentals">
-            <h2>Text Fundamentals</h2>
-            <p>Most structured text consists of headings and paragraphs, whether you are reading a story, a newspaper, a college textbook, a magazine, etc. Structured content makes the reading experience easier and more enjoyable.</p>
-            <h4>Headings</h4>
-            <p>There are six heading elements from &lt;h1&gt; to &lt;h6&gt;. &lt;h1&gt; is used for the main heading and &lt;h2&gt; and the others respectively are used as subheadings and sub-subheadings.</p><br>
-            <p>Because users tend to scan quickly through text to find relevant content, oftentimes reading headings first, you want to display your information with useful titles and subtitles.</p>
-            <h4>Lists</h4>
-            <p>There are unordered &lt;ul&gt; and ordered &lt;ol&gt; lists. Within each, you have the list items, designated by &lt;li&gt;</p>
-            <h4>Hyperlinks</h4>
-            <p>A basic hyperlink is created with the &lt;a&gt; element using the href attribute, also known as a Hypertext Reference, or target, that contains the destination you want the link to go to. You may also want to add a title attribute in order to detail the information about the link, such as what the page contains and where it's leading the viewer to.</p>
-        </section>
 
-        <!--where to learn more-->
         <section class="section-title links" id="links">
-            <h2>Where to learn more</h2>
+            <h2>Helpful Links</h2>
             <div class="container learn-more">
-                <button class="btn"><a href="https://developer.mozilla.org/en-US/docs/Learn">mbn web docs_</a></button>
-                <button class="btn"><a href="https://www.w3schools.com/">W3Schools</a></button>
-                <button class="btn"><a href="https://www.w3docs.com/">W3docs</a></button>
-                <button class="btn"><a href="https://devdocs.io/">DevDocs</a></button>
-                <button class="btn"><a href="https://practice.geeksforgeeks.org/courses/fork-html-css">geeksforgeeks</a></button>
-                <button class="btn"><a href="https://www.freecodecamp.org/">freecodecamp.org</a></button>
-                <button class="btn"><a href="https://www.codecademy.com/">codecademy</a></button>
-                <button class="btn"><a href="https://www.khanacademy.org/">Khan Academy</a></button>
-                <button class="btn"><a href="https://www.sololearn.com/">SoloLearn</a></button>
+                <button class="btn"><a href="https://reactjs.org/tutorial/tutorial.html">Tutorial: Intro to
+                        React</a></button>
+                <button class="btn"><a href="https://reactjs.org/docs/getting-started.html#try-react">Getting Started
+                        with React</a></button>
+                <button class="btn"><a
+                        href="https://www.devopsschool.com/blog/what-is-reactjs-and-how-it-works-an-overview-and-its-use-cases/">An
+                        Overview and Its Use Cases</a></button>
+                <button class="btn"><a href="https://www.youtube.com/watch?v=iwdBLit85TM">React for
+                        Beginners</a></button>
             </div>
         </section>
+
 
         <!-- back to top button -->
         <button class="btn" onclick="topFunction()" id="backToTop" title="Go to top"><i
@@ -521,10 +524,10 @@
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="public/js/nav.js"></script>
+    <script src="static/js/nav.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- <script src="public/js/graph.js"></script> -->
+    <!-- <script src="static/js/graph.js"></script> -->
 
     <script>
         $(window).on("load", function () {

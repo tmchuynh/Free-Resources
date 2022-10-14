@@ -278,7 +278,10 @@ blockquote p {
     .section-title .command blockquote:before {
       content: ""; }
   .section-title .learn-more {
-    display: grid; }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
   .section-title button:hover {
     background-color: var(--dark-orange);
     box-shadow: inset 0 0 0 2px white; }

@@ -388,7 +388,10 @@ blockquote p {
   }
 
   .learn-more {
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   button:hover {

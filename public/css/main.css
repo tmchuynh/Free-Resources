@@ -115,8 +115,13 @@ header {
   main {
     padding-left: 15%; } }
 
-#main-navbar {
-  height: 5rem; }
+#main-navbar,
+.navbar {
+  height: 6rem;
+  color: var(--off-white); }
+
+.offcanvas {
+  visibility: hidden; }
 
 .sidebar {
   position: fixed;
@@ -130,6 +135,14 @@ header {
 @media (max-width: 990.98px) {
   .sidebar {
     width: 30%; } }
+
+@media (min-width: 1485px) {
+  .offcanvas {
+    visibility: visible; }
+  .sidebar {
+    visibility: hidden; }
+  main {
+    padding-left: 0; } }
 
 .sidebar-sticky {
   position: relative;
